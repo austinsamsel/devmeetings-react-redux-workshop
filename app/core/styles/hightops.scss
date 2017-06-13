@@ -1,0 +1,24 @@
+body{
+  background-image: none;
+  background-color: lavenderblush;
+}
+
+.hljs-keyword, .hljs-selector-tag, .hljs-built_in, .hljs-name, .hljs-tag {
+  color:coral;
+}
+
+.hljs-title {
+  color: mediumvioletred;
+}
+
+.hljs-comment, .hljs-quote, .hljs-variable{
+  color: skyblue;
+}
+
+.hljs-attr {
+  color: seagreen;
+}
+
+.hljs-string, .hljs-section, .hljs-attribute, .hljs-literal, .hljs-template-tag, .hljs-template-variable, .hljs-type, .hljs-addition {
+  color: mediumslateblue;
+}

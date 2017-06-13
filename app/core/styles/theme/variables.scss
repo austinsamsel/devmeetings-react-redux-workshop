@@ -3,9 +3,9 @@ $fw-light: 300;
 $fw-bold: 700;
 $fw-black: 900;
 
-$ff-monospace: 'Fira Mono', monospace;
-$ff-base: 'Lato', sans-serif;
-$ff-fancy: 'Gloria Hallelujah', 'Lato', sans-serif;
+$ff-monospace: 'consolas', 'inconsolata', 'Fira Mono', monospace;
+$ff-base: Arial, sans-serif;
+$ff-fancy: Arial, sans-serif;
 
 $fz-base: 24px;
 $fz-normal: $fz-base;
@@ -20,5 +20,5 @@ $lh-condensed-computed: $lh-normal * 1rem;
 
 $color-block-bg: #fff;
 
-$royal-blue: #2468e2;
-$black-rock: #2a2f38;
+$royal-blue: #03a9f4;
+$black-rock: #3a3f48;
