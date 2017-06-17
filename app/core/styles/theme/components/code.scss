@@ -37,21 +37,29 @@
 
     box-shadow: 3px 4px 20px 2px rgba(cyan, 0.5);
 
-    border: 3px solid darkkhaki;
+    border: 3px solid slategray;
+
+    box-shadow: 3px 4px 20px 2px rgba(0, 255, 255, 0.5);
+
+    position:relative;
 
   }
 
   .dm-code__filename {
-    font-size: rem(24px);
-    font-family: $ff-base;
-    color: $royal-blue;
+    font-size: rem(22px);
+    font-family: $ff-monospace;
+    color: floralwhite;
     line-height: $lh-normal-computed;
     font-weight: $fw-normal;
 
     display: block;
-    background-color: $color-block-bg;
+    background-color: slategray;
 
     padding: rem(10px) $padding-horizontal rem(6px);
+    position:relative;
+    z-index:2;
+    box-shadow: 3px 2px 11px 2px rgba(0, 255, 255, 0.5);
+
   }
 }
 

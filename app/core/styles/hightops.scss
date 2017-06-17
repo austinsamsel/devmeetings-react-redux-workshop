@@ -3,12 +3,21 @@ body{
   background-color: lavenderblush;
 }
 
+::selection {
+  background-color: magenta;
+  color: #ffffff;
+}
+
+.dm-slide .dm-code-focus code{
+  color: mediumslateblue;
+}
+
 .hljs-keyword, .hljs-selector-tag, .hljs-built_in, .hljs-name, .hljs-tag {
-  color:coral;
+  color:deeppink;
 }
 
 .hljs-title {
-  color: mediumvioletred;
+  color: chocolate;
 }
 
 .hljs-comment, .hljs-quote, .hljs-variable{
