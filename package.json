@@ -5,7 +5,8 @@
     "build:dev": "node -r babel-register ./node_modules/.bin/webpack --config ./.webpack/development.js --progress --profile --colors",
     "watch:dev": "node -r babel-register ./node_modules/.bin/webpack --config ./.webpack/development.js --profile --colors --watch",
     "build:production": "node -r babel-register ./node_modules/.bin/webpack --config ./.webpack/production.js",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "surge": "node -r babel-register ./node_modules/.bin/webpack --config ./.webpack/production.js && mv dist/index.html dist/200.html && surge ./dist --domain htps-workshop-slides.surge.sh"
   },
   "devDependencies": {
     "babel-core": "^6.20.0",

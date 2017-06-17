@@ -1,0 +1,26 @@
+extends ~layouts/columns
+
+block title
+    | About
+
+block content
+    +slide_column(100)
+        +code(null, 'javascript')
+            include:escape ./index_example.js  
+        
+        +code_focus('3-6').current-only
+            img(src=require('slides/intro/about/devmeetings_logo.jpg')).l-mbn
+    
+        +code_focus('9-13').current-only
+            img(src=require('slides/intro/about/allstarcode.jpg')).l-mbn
+    
+        +code_focus('16-20').current-only
+            img(src=require('slides/intro/about/success.gif')).s-mbn
+        
+        +code_focus('23-28').current-only
+            :markdown-it
+                click 'em'
+        
+        +code_focus('31-39').current-only
+            :markdown-it
+                work together to build your own app
