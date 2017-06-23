@@ -32,7 +32,7 @@ const books = [
 ]
 
 const titles = books.map(function(book) {
-    return book.name;
+    return book.name
 })
 
 titles // ["JavaScript: The Definitive Guide", "Eloquent JavaScript", "JavaScript: The Good Parts"]

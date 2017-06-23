@@ -80,7 +80,7 @@ function init(e) {
     // When a fragment is hidden, clear the current focused fragment,
     // and focus on the previous fragment.
     Reveal.addEventListener('fragmenthidden', function(e) {
-        currentSlide.querySelector('pre code').classList.add('dm-code--initial');
+        //currentSlide.querySelector('pre code').classList.add('dm-code--initial');
         var index = indexOf(currentFragments, e.fragment);
         focusFragment(currentFragments[index - 1]);
     });
@@ -92,7 +92,8 @@ function updateCurrentSlide(e) {
     currentSlide = e.currentSlide;
 
     currentFragments = currentSlide.getElementsByClassName('fragment');
-    currentSlide.querySelector('pre code').classList.add('dm-code--initial');
+    //console.log('would have called ::::  currentSlide.querySelector(\'pre code\').classList.add(\'dm-code--initial\');')
+    //currentSlide.querySelector('pre code').classList.add('dm-code--initial');
 
     clearPreviousFocus();
     if (
@@ -128,7 +129,7 @@ function focusFragment(fragment) {
         return;
     }
 
-    currentSlide.querySelector('pre code').classList.remove('dm-code--initial');
+    //currentSlide.querySelector('pre code').classList.remove('dm-code--initial');
     var lines = fragment.getAttribute('data-code-focus');
     if (!lines) {
         return;

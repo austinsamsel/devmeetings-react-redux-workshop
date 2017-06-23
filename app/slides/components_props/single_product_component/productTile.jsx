@@ -1,13 +1,13 @@
 import React from 'react'
 
-function ProductTile({ item }) {
+function ProductTile({ product }) {
     return (
         <div>
-            <header>{ item.name }</header>
+            <header>{ product.name }</header>
             <p>
-                { item.description }
+                { product.description }
             </p>
-            <span>{ item.price }$</span>
+            <span>{ product.price }$</span>
         </div>
     )
 }
